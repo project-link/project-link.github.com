@@ -1,0 +1,17 @@
+<div id="primaryContainer" class="primaryContainer">
+    <a href="" ui-sref="landing" class="landing-logo">
+        <img src="img/link.png" class="landing-logo-img">
+    </a>
+    <div class="landing-container">
+        <form name="signupForm">
+            
+            <input type="text" placeholder="Name.." class="landing-input" required ng-model="user.name" ln-focus="true">
+            <input type="email" placeholder="Email.." class="landing-input" required ng-model="user.email">
+            <input type="password" placeholder="Password.." class="landing-input" required ng-model="user.password">
+            
+            <input type="submit" value="Submit" class="landing-btn-sign-complete" ng-click="signup()" ng-show="signupForm.$valid">
+        </form>
+    </div>
+    
+    
+</div>

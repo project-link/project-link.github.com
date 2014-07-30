@@ -1,0 +1,300 @@
+<div id="primaryContainer" class="primaryContainer">
+    <div class="header-dot">
+        <div class="header-left-container">
+            <input type="button" value="X" class="header-left-btn-close" ng-click="logout()">
+        </div>
+        <a ng-click="menuToggle=!menuToggle" >
+            <div class="header-bedge">
+                <div class="header-bedge-text">
+                    10
+                </div>
+            </div>
+        </a>
+        <div class="header-menu-container" ng-show="menuToggle" ng-init="menuToggle=false">
+            <input type="button" value="mark all as read" class="header-btn-menu">
+            <input type="button" value="Off - 1 hour" class="header-btn-menu">
+        </div>
+    </div>
+    <div class="content-container" id="top">
+        <a href="" ui-sref="chat({cardId: card.id})" class="card" ng-repeat="card in cards|orderBy:'-create_at'">
+            <div class="card-content" ng-show="card.link.linkType=='GROUP'">
+                <div class="card-header">
+                    <div class="card-header-name" ng-bind="card.link.name">
+                    </div>
+                    <div class="card-header-bedge">
+                        <div class="card-header-bedge-text" ng-bind="card.alarmCount">
+                        </div>
+                    </div>
+                </div>
+                
+                <div ng-repeat="message in card.messages |orderBy:'-id' | limitTo:2 ">
+                    <div class="card-content-header">
+                        <div class="card-content-user-photo">
+                            <img src="img/avatar.png" class="card-content-user-photo-img">
+                        </div>
+                        <div class="card-content-user-name" ng-bind="message.from.name">
+                        </div>
+                        <div class="card-content-date" ng-bind="message.create_at">
+                        </div>
+                    </div>
+                    <div class="card-content-body">
+                        <div class="card-content-msg" ng-bind="message.text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content" ng-show="card.link.linkType=='SOLO'" ng-repeat="message in card.messages |orderBy:'-id' | limitTo:1">
+                <div class="card-content-header">
+                    <div class="card-content-user-photo">
+                        <img src="img/avatar.png" class="card-content-user-photo-img">
+                    </div>
+                    <div class="card-content-user-name" ng-bind="message.from.name">
+                    </div>
+                    <div class="card-content-date" ng-bind="message.create_at">
+                    </div>
+                    <div class="card-content-bedge-text" ng-bind="card.alarmCount">
+                    </div>
+                </div>
+                <div class="card-content-body">
+                    <div class="card-content-msg" ng-bind="message.text">
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="" ui-sref="chat" class="card">
+            <div class="card-content">
+                <div class="card-content-header">
+                    <div class="card-content-user-photo">
+                        <img src="img/avatar.png" class="card-content-user-photo-img">
+                    </div>
+                    <div class="card-content-user-name">
+                    이강훈
+                    </div>
+                    <div class="card-content-date">
+                    12 시간 전
+                    </div>
+                    <div class="card-content-bedge-text">
+                    2
+                    </div>
+                </div>
+                <div class="card-content-body">
+                    <div class="card-content-msg">
+                    어도비와 구글은 오늘 65,535자를.…<br>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-content-header">
+                    <div class="card-content-user-photo">
+                        <img src="img/avatar.png" class="card-content-user-photo-img">
+                    </div>
+                    <div class="card-content-user-name">
+                    이강훈
+                    </div>
+                    <div class="card-content-date">
+                    12 시간 전
+                    </div>
+                    <div class="card-content-bedge-text">
+                    2
+                    </div>
+                </div>
+                <div class="card-content-body">
+                    <div class="card-content-msg">
+                    어도비와 구글은 오늘 65,535자를 …<br>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <input type="button" value="확인" class="card-footer-btn">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-name">
+                UX 디자이너 모임
+                </div>
+                <div class="card-header-bedge">
+                    <div class="card-header-bedge-text">
+                    2
+                    </div>
+                </div>
+            </div>
+            <div class="card-content-header">
+                <div class="card-content-user-photo">
+                    <img src="img/avatar02.jpeg" class="card-content-user-photo-img">
+                </div>
+                <div class="card-content-user-name">
+                홍길동
+                </div>
+                <div class="card-content-date">
+                10 시간 전
+                </div>
+            </div>
+            <div class="card-content-body">
+                <div class="card-content-msg">
+                다음주부터 월요일 티타임을 부활하도록...<br>
+                </div>
+            </div>
+            <div class="card-content-line">
+            </div>
+            <div class="card-content">
+                <div class="card-content-header">
+                    <div class="card-content-user-photo">
+                        <img src="img/avatar.png" class="img card-content-user-photo-img">
+                    </div>
+                    <div class="card-content-user-name">
+                    이강훈
+                    </div>
+                    <div class="card-content-user-date">
+                    12 시간 전
+                    </div>
+                </div>
+                <div class="card-content-body">
+                    <div class="card-content-msg">
+                    어도비와 구글은 오늘 65,535자를 ….<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-name">
+                UX 디자이너 모임
+                </div>
+                <div class="card-header-bedge">
+                    <div class="card-header-bedge-text">
+                    2
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-content-header">
+                    <div class="card-content-user-photo">
+                        <img src="img/avatar02.jpeg" class="card-content-user-photo-img">
+                    </div>
+                    <div class="card-content-user-name">
+                    홍길동
+                    </div>
+                    <div class="card-content-user-date">
+                    10 시간 전
+                    </div>
+                </div>
+                <div class="card-content-body">
+                    <div class="card-content-msg">
+                    점심 뭐먹을까요?
+                    </div>
+                </div>
+                <div class="card-options">
+                    <div class="card-options-radio-group">
+                        <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
+                        <label for="radio1" class="css-label radGroup1">자장면 </label>
+                        
+                        <!-- <input type="radio" name="Default" class="card-options-radio-btn css-checkbox">
+                        <label class="card-options-radio-text" class="css-label">
+                        짜장면
+                        </label> -->
+                    </div>
+                    <div class="card-options-radio-group">
+                        <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" />
+                        <label for="radio2" class="css-label radGroup1">짬뽕</label>
+                        <!-- <input type="radio" name="Default" class="card-options-radio-btn">
+                        <div class="card-options-radio-text" >
+                        짜장면
+                        </div> -->
+                    </div>
+                    <div class="card-options-radio-group">
+                        <input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" />
+                        <label for="radio3" class="css-label radGroup1">탕수육</label>
+                        <!-- <input type="radio" name="Default" class="card-options-radio-btn">
+                        <div class="card-options-radio-text">
+                        짜장면
+                        </div> -->
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <input type="button" value="완료" class="card-footer-btn">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-name">
+                UX 디자이너 모임
+                </div>
+                <div class="card-header-bedge">
+                    <div class="card-header-bedge-text">
+                    2
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-content-header">
+                    <div class="card-content-user-photo">
+                        <img src="img/avatar02.jpeg" class="card-content-user-photo-img">
+                    </div>
+                    <div class="card-content-user-name">
+                    홍길동
+                    </div>
+                    <div class="card-content-user-date">
+                    10 시간 전
+                    </div>
+                </div>
+                <div class="card-content-body">
+                    <div class="card-content-msg">
+                    점심 뭐먹을까요?
+                    </div>
+                </div>
+                <div class="card-options">
+                    <div class="card-options-bar">
+                        <div class="card-options-bar-fill-a">
+                            <div class="card-options-bar-text">
+                            자장면
+                            </div>
+                        </div>
+                        <div class="card-options-bar-bedge">
+                        10
+                        </div>
+                    </div>
+                    <div class="card-options-bar">
+                        <div class="card-options-bar-fill-b">
+                            <div class="card-options-bar-text">
+                            자장면
+                            </div>
+                        </div>
+                        <div class="card-options-bar-bedge">
+                        2
+                        </div>
+                    </div>
+                    <div class="card-options-bar">
+                        <div class="card-options-bar-fill-c">
+                            <div class="card-options-bar-text">
+                            자장면
+                            </div>
+                        </div>
+                        <div class="card-options-bar-bedge">
+                        2
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="card-footer-check" >
+                    확인: 10
+                    </a>
+                    <div class="card-footer-comment">
+                    의견: 10 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="" ng-click="scrollTo('top')">
+        <img src="img/arrow.png" class="footer-scrollUp-btn">
+    </a>
+    <a href="" ui-sref="create-room" class="main-create-link-btn">
+        <img src="img/link.png" class="main-create-link-img">
+    </a>
+</div>

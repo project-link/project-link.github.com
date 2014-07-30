@@ -1,0 +1,222 @@
+/*
+****** Colors extracted from Reflow ******
+// hex value RGB value         Closest color   Used      isBackground?
+//---------------------------------------------------------------------
+// #666666   rgb(102,102,102)  *dimgray         3 times  
+// #ffffff   rgb(255,255,255)  white            3 times  background
+// #ebeced   rgb(235,236,237)  *lavender        1 time   background
+// #000000   rgb(0,0,0)        black            1 time   
+// #fc5b5d   rgb(252,91,93)    *tomato          1 time   background
+// #6098f5   rgb(96,152,245)   *cornflowerblue  1 time   background
+
+// * means that color name is the closest match
+//---------------------------------------------------------------------
+
+****** Fonts extracted from Reflow ******
+//arial 1 times 
+//---------------------------------------------------------------------
+
+****** Gradients extracted from Reflow ******
+*/
+
+/****** Breakpoints extracted from Reflow ******/
+
+/* class: landing-logo-img used 1 times */
+.landing-logo-img {  
+  float: none;  
+  width: 30px;  
+  max-width: none;  
+  height: 30px;  
+  clear: none;  
+  color: rgb(0, 0, 0);  
+  position: absolute;  
+  top: 17px;  
+  left: 16.125px;  
+  z-index: auto;  
+  bottom: auto;  
+  right: auto;
+}
+
+/* class: landing-logo used 1 times */
+.landing-logo {  
+  float: none;  
+  height: 64px;  
+  clear: none;  
+  width: 64px;  
+  min-height: 50px;  
+  position: relative;  
+  top: 0px;  
+  left: 0px;  -webkit-border-top-left-radius: 32px;
+  border-top-left-radius: 32px;  -webkit-border-top-right-radius: 32px;
+  border-top-right-radius: 32px;  -webkit-border-bottom-right-radius: 32px;
+  border-bottom-right-radius: 32px;  -webkit-border-bottom-left-radius: 32px;
+  border-bottom-left-radius: 32px;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 5px 0px;  
+  background-color: rgb(252, 91, 93);  
+  display: block;  
+  margin: 80px auto 0px auto;
+}
+
+/* class: landing-btn-facebook used 1 times */
+.landing-btn-facebook {  
+  float: none;  
+  height: 60px;  
+  font-size: 1em;  
+  clear: none;  
+  width: 100%;  
+  color: rgb(255, 255, 255);  -webkit-opacity: 1;
+  opacity: 1;  
+  display: block;  
+  font-weight: 600;  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  
+  background-color: rgb(96, 152, 245);  
+  min-width: 0px;  
+  margin: 11px 0px 10px 0px;
+}
+
+/* class: landing-btn-signup used 1 times */
+.landing-btn-signup {  
+  float: none;  
+  height: 60px;  
+  font-size: 1em;  
+  margin-left: 0px;  
+  margin-top: 10px;  
+  clear: none;  
+  width: 100%;  
+  color: rgb(102, 102, 102);  -webkit-opacity: 1;
+  opacity: 1;  
+  display: block;  
+  font-weight: 600;  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  
+  background-color: rgb(255, 255, 255);  
+  margin-bottom: 10px;
+}
+
+/* class: landing-btn-signin used 1 times */
+.landing-btn-signin {  
+  float: none;  
+  height: 60px;  
+  font-size: 1em;  
+  margin-left: 0px;  
+  /*margin-top: 10px;  */
+  clear: none;  
+  width: 100%;  
+  color: rgb(102, 102, 102);  -webkit-opacity: 1;
+  opacity: 1;  
+  display: block;  
+  font-weight: 600;  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  
+  background-color: rgb(255, 255, 255);  
+  /*margin-bottom: 10px;*/
+}
+
+
+/* class: landing-btn-sign-complete used 1 times */
+.landing-btn-sign-complete {  
+  float: right;  
+  height: 40px;  
+  font-size: 0.8em;  
+  clear: none;  
+  width: 100%;  
+  color: rgb(255, 255, 255);  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  
+  display: block;  
+  min-width: 0px;  
+  position: relative;  
+  top: 0px;  
+  left: 0px;  
+  z-index: 10;  
+  background-color: rgb(15, 157, 88);  
+  font-weight: 500;  
+  margin: 10px 0px 10px 0px;  
+  padding: 0px 0px 0px 0px;
+}
+
+/* class: landing-footer-container used 1 times */
+.landing-footer-container {  
+  float: left;  
+  height: 50px;  
+  clear: both;  
+  width: 100%;  
+  min-height: 50px;  
+  position: fixed;  
+  top: auto;  
+  left: 0%;  
+  bottom: 0px;  
+  right: auto;  
+  min-width: 0px;  
+  display: block;
+}
+
+/* class: landing-container used 1 times */
+.landing-container {  
+  float: left;  
+  height: auto;  
+  clear: none;  
+  width: 100%;  
+  margin: 0px 0px 0px 0px;  
+  padding: 50px 50px 50px 50px;
+}
+
+/* class: landing-input used 1 times */
+.landing-input {  
+  float: none;  
+  height: 50px;  
+  font-size: 1.2em;
+  color: #2B303B;
+  display: block; 
+  margin: 10px;
+  width: 100%;  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;  
+
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;  
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;  
+  min-width: 0px;  
+  border-top-width: 0px;  
+  border-right-width: 0px;  
+  border-bottom-width: 1px;  
+  border-left-width: 0px;  
+  border-bottom-color: rgb(102, 102, 102);  
+  border-bottom-style: solid;  
+  margin-top: 0px;  
+  margin-left: 0%;  
+  clear: none;
+  background-color: rgb(235, 236, 237);  
+  padding: 10px 10px 10px 10px;
+}

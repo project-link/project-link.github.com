@@ -1,0 +1,13 @@
+<div id="primaryContainer" class="primaryContainer">
+    <a href="" ui-sref="landing" class="landing-logo">
+        <img src="img/link.png" class="landing-logo-img">
+    </a>
+    <div class="landing-container">
+        <form name="loginForm">
+            <input type="email" placeholder="Email.." class="landing-input" required ng-model="user.email" ln-focus="true">
+            <input type="password" placeholder="Password.." class="landing-input" required ng-model="user.password">
+            <input type="submit" value="Submit" class="landing-btn-sign-complete" ng-click="login()" ng-show="loginForm.$valid">
+        </form>
+    </div>
+    
+</div>

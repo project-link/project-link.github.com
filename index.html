@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>LINK</title>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- <link rel="stylesheet" href="vendor/some.contrib.css"> -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/boilerplate.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/domains.css -->
+    <link rel="stylesheet" href="domains/landing/landing.css">
+    <link rel="stylesheet" href="domains/main/main.css">
+    <link rel="stylesheet" href="domains/main/chat/chat.css">
+    <link rel="stylesheet" href="domains/main/create-room/create-room.css">
+    <!-- endbuild -->
+
+  </head>
+
+  <body ng-app="LinkApp" ng-controller="AppCtrl">
+    <!-- <ion-nav-view></ion-nav-view> -->
+    <div ui-view class="primaryContainer"></div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- <script src="vendor/someContribJs.js"></script> -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
+    <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/jStorage/jstorage.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/ngAnimate-animate.css/animate.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/domains.js -->
+    <script src="domains/landing/landing-controller.js"></script>
+    <script src="domains/landing/landing-service.js"></script>
+    
+    <script src="domains/landing/signup/signup-controller.js"></script>
+    <script src="domains/landing/signup/signup-service.js"></script>
+    
+    <script src="domains/landing/login/login-controller.js"></script>
+    <script src="domains/landing/login/login-service.js"></script>
+
+    <script src="domains/main/main-controller.js"></script>
+    <script src="domains/main/main-service.js"></script>
+
+    <script src="domains/main/chat/chat-controller.js"></script>
+    <script src="domains/main/chat/chat-service.js"></script>
+
+    <script src="domains/main/create-room/create-room-controller.js"></script>
+    <script src="domains/main/create-room/create-room-service.js"></script>
+    
+    
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/common.js -->
+    <script src="domains/common/services/session-service.js"></script>
+    <script src="domains/common/services/storage-service.js"></script>
+
+    <script src="domains/common/models/session.js"></script>
+    <script src="domains/common/models/users.js"></script>
+
+    <script src="domains/common/directives/ln-focus-directive.js"></script>
+    <!-- endbuild -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+  </body>
+</html>

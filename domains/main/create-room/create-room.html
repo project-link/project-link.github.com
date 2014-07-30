@@ -1,0 +1,40 @@
+<div id="primaryContainer" class="primaryContainer">
+    <div class="header-container">
+        <div class="header-left-container">
+            <input type="button" value="close" class="header-left-btn-close" ui-sref="main">
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="create-room-join-members-panel">
+            <div class="create-room-join-members-card">
+                <img src="img/avatar.png" 
+                    class="create-room-user-photo" 
+                    ng-class="{'dn-fade':true}"
+                    ng-show="checkedUser"
+                    ng-repeat="checkedUser in checkedUsers"
+                    ng-click="checkUser(checkedUser)">
+            </div>
+        </div>
+        <div class="panel" ng-class="{'dn-lightspeed':true}" ng-show="checkedUsers.length > 1">
+            <input type="text" placeholder="링크명을 입력해 주세요." class="create-room-input" ng-model="link.name" required>
+        </div>
+        <div class="panel-users">
+            <div class="card" 
+                ng-class="{'card-checked':user.checked==true}"
+                ng-repeat="user in users | filter:search"
+                ng-init="user.checked=false" ng-click="checkUser(user)">
+
+                <img src="img/avatar.png" class="create-room-user-photo">
+                <div class="create-room-name-text" ng-bind="user.name">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div href="cards.html" class="footer-container">
+        <input type="button" value="&lt;" class="footer-left-btn-back" ui-sref="main">
+        <div class="footer-input-group">
+            <input type="text" placeholder="이름 or 링크명을  입력해 주세요." class="footer-input" ng-model="search">
+        </div>
+        <input type="button" value="+" class="footer-right-btn-create" ng-click="createCard(checkedUsers)">
+    </div>
+</div>

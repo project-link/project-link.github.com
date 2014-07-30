@@ -1,0 +1,33 @@
+<div id="primaryContainer" class="primaryContainer-white">
+    <div class="header-container">
+        <div class="header-left-container">
+            <input type="button" value="close" ui-sref="main" class="header-left-btn-close">
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="card-chat" ng-repeat="message in card.messages">
+            <img src="img/avatar.png" class="card-chat-user-photo">
+            <div class="card-chat-msg-container" >
+                <div class="card-chat-name-text" ng-bind="message.from.name">
+                </div>
+                <div class="card-chat-date-text" ng-bind="message.create_at">
+                </div>
+                <div class="card-chat-message-text" ng-bind="message.text">
+                </div>
+            </div>
+        </div>
+        <div class="card-chat-line">
+        </div>
+    </div>
+
+    <form>
+        <div href="cards.html" class="footer-container">
+            <input type="button" value="&lt;" class="footer-left-btn-back">
+            <div class="footer-input-group">
+                <input type="text" placeholder="text messages..." class="footer-input" ng-model="text" ln-focus="isFocus">
+            </div>
+            <!-- <input type="button" value="+" class="footer-right-btn-create"> -->
+            <input type="submit" value="send" class="footer-right-btn-send" ng-click="sendMessage(text); isFocus=!isFocus" ng-init="isFocus=true">
+        </div>
+    </form>
+</div>

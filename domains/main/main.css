@@ -1,0 +1,676 @@
+/*
+****** Colors extracted from Reflow ******
+// hex value RGB value         Closest color   Used      isBackground?
+//---------------------------------------------------------------------
+// #000000   rgb(0,0,0)        black            5 times  
+// #666666   rgb(102,102,102)  *dimgray         4 times  
+// #ffffff   rgb(255,255,255)  white            4 times  background
+// #969696   rgb(150,150,150)  *darkgray        3 times  
+// #ff6082   rgb(255,96,130)   *lightcoral      2 times  
+// #ebeced   rgb(235,236,237)  *lavender        1 time   background
+// #ff5858   rgb(255,88,88)    *tomato          1 time   background
+// #fc5b5d   rgb(252,91,93)    *tomato          1 time   background
+
+// * means that color name is the closest match
+//---------------------------------------------------------------------
+
+****** Fonts extracted from Reflow ******
+//---------------------------------------------------------------------
+
+****** Gradients extracted from Reflow ******
+*/
+
+/****** Breakpoints extracted from Reflow ******/
+
+/* class: card used 2 times */
+.card {  
+  height: auto;  
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+  clear: none;  
+  width: 100%;  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;  
+  border-top-width: 0px;  
+  border-top-style: solid;  
+  border-top-color: rgb(102, 102, 102);  
+  border-right-width: 0px;  
+  border-right-style: solid;  
+  border-right-color: rgb(102, 102, 102);  
+  border-bottom-width: 0px;  
+  border-bottom-style: solid;  
+  border-bottom-color: rgb(102, 102, 102);  
+  border-left-width: 0px;  
+  border-left-style: solid;  
+  border-left-color: rgb(102, 102, 102);  
+  position: relative;  
+  top: 0px;  
+  left: 0px;  
+  display: block;  
+  background-color: rgb(255, 255, 255);  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  padding: 5px;
+}
+
+.header-dot {  
+  float: left;  
+  height: 50px;  
+  clear: none;  
+  width: 100%;  
+  position: fixed;  
+  top: 0px;  
+  left: 0%;  
+  display: block;  
+  z-index: 10;  
+  bottom: auto;  
+  background-color: rgb(255, 255, 255);  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+}
+
+/* class: header-bedge used 1 times */
+.header-bedge {  
+  float: right;  
+  height: 22px;  
+  width: auto;
+  min-height: 0px;  -webkit-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;  -webkit-border-top-right-radius: 20px;
+  border-top-right-radius: 20px;  -webkit-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;  
+  border-top-width: 2px;  
+  border-top-style: solid;  
+  border-top-color: rgb(255, 88, 88);  
+  border-right-width: 2px;  
+  border-right-style: solid;  
+  border-right-color: rgb(255, 88, 88);  
+  border-bottom-width: 2px;  
+  border-bottom-style: solid;  
+  border-bottom-color: rgb(255, 88, 88);  
+  border-left-width: 2px;  
+  border-left-style: solid;  
+  border-left-color: rgb(255, 88, 88);  
+  display: block;  
+  position: absolute;  
+  top: 10px;  
+  left: auto;  
+  z-index: 100;  
+  background-color: rgb(255, 88, 88);  
+  right: 20px;  
+  bottom: auto;
+}
+
+/* class: header-bedge-text used 1 times */
+.header-bedge-text {  
+  float: none;  
+  font-size: 0.8em;  
+  width: auto;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 600;  
+  line-height: 1em;  
+  clear: none;  
+  min-height: 0px;  
+  color: rgb(255, 255, 255);  
+  position: static;  
+  top: 0px;  
+  left: 0px;  
+  margin: 3px 5px 5px 5px;
+}
+
+/* class: header-bedge-img used 1 times */
+.header-bedge-img {  
+  float: right;  
+  width: 25px;  
+  max-width: 100%;  
+  width: 25px; 
+  clear: none;  
+  color: rgb(0, 0, 0);  
+  position: absolute;  
+  top: 12px;  
+  left: auto;  
+  right: 25px;  
+  bottom: auto;
+}
+
+.header-menu-container {  
+  float: left;  
+  height: auto;  
+  clear: none;  
+  width: 200px;  
+  position: fixed;  
+  top: 60px;  
+  left: auto;  
+  right: 10px;  
+  bottom: auto;  
+  background-color: rgb(255, 255, 255);  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 2px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 2px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.701961) 2px 2px 5px 0px;  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;  
+}
+
+/* class: header-btn-menu used 2 times */
+.header-btn-menu {  
+  float: none;  
+  height: 40px;  
+  font-size: 1em;  
+  clear: none;  
+  width: 180px;  
+  position: relative;  
+  top: 0px;  
+  left: 0px;  
+  background-color: rgb(245, 245, 245);  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;  
+  border-top-width: 0px;  
+  border-right-width: 0px;  
+  border-bottom-width: 0px;  
+  border-left-width: 0px;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 3px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 3px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 3px 5px 0px;  
+  margin: 10px;
+  color: rgb(102, 102, 102);
+}
+
+
+
+/* class: card-content used 2 times */
+.card-content {  
+  height: auto;  
+  margin-top: 0px;  
+  margin-bottom: 0px;  
+  clear: none;  
+  width: 100%;  
+  min-height: 0px;  
+  min-width: 0px;  
+  display: block;
+}
+
+/* class: card-content-header used 3 times */
+.card-content-header {  
+  float: none;  
+  height: 50px;  
+  clear: none;  
+  width: 100%;  
+  min-height: 50px;  
+  min-width: 0px;  
+  margin: 0px auto 0px auto;
+}
+
+/* class: card-content-user-photo used 3 times */
+.card-content-user-photo {  
+  float: left;  
+  height: 50px;  
+  clear: none;  
+  width: 50px;  
+  min-height: 0px;  
+  display: block;  
+  margin: 0px 0px 0px 0px;
+}
+
+/* class: card-content-user-photo-img used 3 times */
+.card-content-user-photo-img {  
+  float: none;  
+  width: 25px;  
+  max-width: 100%;  
+  height: 25px;  
+  margin-top: 12px;  
+  margin-right: auto;  
+  margin-left: auto;  
+  clear: none;  
+  color: rgb(0, 0, 0);  
+  display: block;
+}
+
+/* class: card-content-user-name used 3 times */
+.card-content-user-name {  
+  float: left;  
+  font-size: 0.8em;  
+  width: auto;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 600;  
+  line-height: 1em;  
+  clear: none;  
+  min-height: 0px;  
+  display: block;  
+  margin: 18px 0px 0px 4px;
+}
+
+/* class: card-content-date used 2 times */
+.card-content-date {  
+  float: left;  
+  font-size: 0.8em;  
+  width: auto;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 400;  
+  line-height: 1em;  
+  clear: none;  
+  min-height: 0px;  
+  display: block;  
+  color: rgb(150, 150, 150);  
+  margin: 18px 0px 0px 15px;
+}
+
+/* class: card-content-body used 3 times */
+.card-content-body {  
+  float: none;  
+  height: auto;  
+  clear: none;  
+  width: 100%;  
+  min-height: 0px;  
+  min-width: 0px;  
+  margin: 0px auto 0px auto;  
+  padding: 0px 12px 12px 12px;
+}
+
+/* class: card-content-msg used 3 times */
+.card-content-msg {  
+  float: left;  
+  font-size: 0.9em;  
+  width: auto;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 400;  
+  line-height: 1.5em;  
+  clear: none;  
+  min-height: 0px;  
+  display: block;  
+  color: rgb(102, 102, 102);  
+  margin: 0px 0px 0px 0px;
+}
+
+/* class: card-content-bedge-text used 1 times */
+.card-content-bedge-text {  
+  float: right;  
+  font-size: 0.8em;  
+  width: 10px;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 600;  
+  line-height: 1em;  
+  clear: none;  
+  min-height: 0px;  
+  color: rgba(255, 96, 130, 0.792157);  
+  display: block;  
+  margin: 15px 15px 0px 0px;
+}
+
+/* class: main-create-link-btn used 1 times */
+.main-create-link-btn {  
+  float: none;  
+  height: 58px;  
+  clear: none;  
+  width: 58px;  
+  min-height: 50px;  
+  position: fixed;  
+  top: auto;  
+  left: auto;  -webkit-border-top-left-radius: 32px;
+  border-top-left-radius: 32px;  -webkit-border-top-right-radius: 32px;
+  border-top-right-radius: 32px;  -webkit-border-bottom-right-radius: 32px;
+  border-bottom-right-radius: 32px;  -webkit-border-bottom-left-radius: 32px;
+  border-bottom-left-radius: 32px;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 5px 0px;  
+  display: block;  
+  right: 15px;  
+  bottom: 15px;  
+  background-color: rgb(252, 91, 93);  
+  z-index: 10;
+}
+
+/* class: main-create-link-img used 1 times */
+.main-create-link-img {  
+  float: none;  
+  width: 25px;  
+  max-width: none;  
+  height: 25px;  
+  clear: none;  
+  color: rgb(0, 0, 0);  
+  position: absolute;  
+  top: 17px;  
+  left: 16.125px;  
+  z-index: auto;  
+  bottom: auto;  
+  right: auto;
+}
+
+/* class: card-header used 1 times */
+.card-header {  
+  float: none;  
+  height: 50px;  
+  margin-left: auto;  
+  margin-top: 0px;  
+  clear: none;  
+  width: 100%;  
+  min-height: 0px;  
+  margin-right: auto;  
+  min-width: 0px;  
+  position: relative;  
+  top: 0px;  
+  left: 0px;  
+  border-bottom-width: 1px;  
+  border-bottom-color: rgb(235, 236, 237);  
+  border-bottom-style: solid;
+}
+
+/* class: card-header-name used 1 times */
+.card-header-name {  
+  float: left;  
+  font-size: 1.2em;  
+  width: auto;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 600;  
+  line-height: 1em;  
+  clear: none;  
+  min-height: 0px;  
+  margin: 16px 0px 0px 15px;
+}
+
+/* class: card-header-bedge used 1 times */
+.card-header-bedge {  
+  float: right;  
+  height: 50px;  
+  clear: none;  
+  width: 40px;  
+  min-height: 0px;  
+  min-width: 0px;  
+  position: relative;  
+  top: 0px;  
+  left: 0px;  
+  display: block;  
+  margin: 0px 0px 0px 0px;
+}
+
+/* class: card-header-bedge-text used 1 times */
+.card-header-bedge-text {  
+  float: none;  
+  font-size: 0.8em;  
+  width: 10px;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 600;  
+  line-height: 1em;  
+  clear: none;  
+  min-height: 0px;  
+  color: rgba(255, 96, 130, 0.792157);  
+  margin: 16px 15px 0px auto;
+}
+
+/* class: card-content-line used 1 times */
+.card-content-line {  
+  float: left;  
+  height: auto;  
+  clear: none;  
+  width: 100%;  
+  min-height: 0px;  
+  min-width: 0px;  
+  border-top-style: dashed;  
+  border-top-width: 1px;  
+  border-top-color: rgb(235, 236, 237);  
+  margin: -1px 0px 0px 0px;
+}
+
+/* class: card-content-user-date used 1 times */
+.card-content-user-date {  
+  float: left;  
+  font-size: 0.8em;  
+  width: auto;  
+  height: auto;  
+  text-align: left;  
+  font-weight: 400;  
+  line-height: 1em;  
+  clear: none;  
+  min-height: 0px;  
+  display: block;  
+  color: rgb(150, 150, 150);  
+  margin: 18px 0px 0px 15px;
+}
+
+
+/* class: card-footer used 1 times */
+.card-footer {  
+  float: left;  
+  height: auto;  
+  clear: both;  
+  width: 100%;  
+  min-height: 50px;  
+  min-width: 0px;  
+  display: block;  
+  margin: 0px 0px 0px 0px;  
+  padding: 12px 12px 12px 12px;
+}
+
+/* class: card-footer-btn used 1 times */
+.card-footer-btn {  
+  float: left;  
+  height: 42px;  
+  font-size: 1em;  
+  clear: none;  
+  width: 100%;  
+  color: rgb(255, 255, 255);  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;  
+  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;  
+  display: block;  
+  min-width: 0px;  
+  background-color: rgb(15, 157, 88);  
+  padding-top: 3px;  
+  margin: 0px 0px 0px 0px;
+}
+
+
+.footer-scrollUp-btn {  
+  float: left;  
+  width: 50px;  
+  max-width: none;  
+  height: 50px;  
+  clear: both;  
+  color: rgb(0, 0, 0);  
+  display: block;  
+  position: fixed;  
+  top: auto;  
+  left: 15px;  
+  right: auto;  
+  bottom: 15px;  -webkit-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;  -webkit-border-top-right-radius: 20px;
+  border-top-right-radius: 20px;  -webkit-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+
+
+/* class: card-options used 1 times */
+.card-options {                              
+  float: none;                              
+  height: auto;                              
+  clear: none;                              
+  width: 100%;                              
+  min-height: 50px;                              
+  min-width: 0px;                              
+  border-bottom-width: 1px;                              
+  border-bottom-style: dashed;                              
+  display: block;                              
+  border-bottom-color: rgb(235, 236, 237);                              
+  margin: 0px auto 0px auto;                              
+  padding: 20px 12px 20px 12px;
+}
+
+/* class: card-options-radio-group used 3 times */
+.card-options-radio-group {                              
+  float: none;                              
+  height: auto;                              
+  display: block;                              
+  text-align: left;                              
+  margin-right: 0px;                              
+  margin-bottom: 10px;                              
+  margin-left: 0px;                              
+  clear: none;                              
+  width: auto;
+}
+
+/* class: card-options-radio-btn used 3 times */
+.card-options-radio-btn {                              
+  float: none;                              
+  width: 20px;                      
+  height: 20px;            
+  font-size: 1em;                              
+  display: inline-block; 
+  padding: 0px 0px 0px 0px;
+}
+
+/* class: card-options-radio-text used 3 times */
+.card-options-radio-text {                              
+  float: none;                              
+  font-size: 1em;                              
+  width: auto;                              
+  height: auto;                              
+  text-align: left;                              
+  font-weight: normal;                              
+  line-height: 1em;                              
+  display: inline-block;                              
+  padding: 0em 0.5em 0em 0.5em;
+}
+
+
+
+
+/* class: card-options-bar used 3 times */
+.card-options-bar {                              
+  float: none;                              
+  height: auto;                              
+  clear: none;                              
+  display: block;                              
+  margin: 0px 0px 20px 0px;
+}
+
+/* class: card-options-bar-fill-a used 1 times */
+.card-options-bar-fill-a {                              
+  float: left;                              
+  height: 25px;                              
+  clear: none;                              
+  width: 80%;                              
+  display: block;                              
+  background-color: rgb(157, 191, 249);                              
+  margin: 0px 0px 0px 0px;                              
+  padding: 5px 5px 5px 5px;
+}
+
+/* class: card-options-bar-text used 3 times */
+.card-options-bar-text {                              
+  float: left;                              
+  font-size: 0.8em;                              
+  width: auto;                              
+  height: auto;                              
+  text-align: left;                              
+  font-weight: normal;                              
+  line-height: 1em;                              
+  clear: none;                              
+  min-height: 0px;                              
+  color: rgb(255, 255, 255);                              
+  margin: 2px 0px 0px 0px;
+}
+
+/* class: card-options-bar-bedge used 3 times */
+.card-options-bar-bedge {                              
+  float: right;                              
+  font-size: 0.8em;                              
+  width: auto;                              
+  height: auto;                              
+  text-align: left;                              
+  font-weight: 600;                              
+  line-height: 1em;  
+  margin-top: 5px;                                   
+  margin-right: 0%;                              
+  margin-bottom: 0px;                       
+  margin-left: 0px;                              
+  clear: none;                              
+  min-height: 0px;                              
+  color: rgb(140, 140, 140);                              
+  display: block;
+}
+
+/* class: card-options-bar-fill-b used 1 times */
+.card-options-bar-fill-b {                              
+  float: left;                              
+  height: 25px;                              
+  clear: none;                              
+  width: 70%;                              
+  display: block;                              
+  background-color: rgb(157, 191, 249);                              
+  margin: 0px 0px 0px 0px;                              
+  padding: 5px 5px 5px 5px;
+}
+
+/* class: card-options-bar-fill-c used 1 times */
+.card-options-bar-fill-c {                              
+  float: left;                              
+  height: 25px;                              
+  clear: none;                              
+  width: 40%;                              
+  display: block;                              
+  background-color: rgb(157, 191, 249);                              
+  margin: 0px 0px 0px 0px;                              
+  padding: 5px 5px 5px 5px;
+}
+
+/* class: card-footer-check used 1 times */
+.card-footer-check {                              
+  float: left;                              
+  font-size: 0.8em;                              
+  width: auto;                              
+  height: auto;                              
+  text-align: left;                              
+  font-weight: normal;                              
+  line-height: 1em;                              
+  margin-left: 0px;                              
+  margin-top: 6px;                              
+  clear: none;                              
+  min-height: 0px;
+}
+
+/* class: card-footer-comment used 1 times */
+.card-footer-comment {                              
+  float: left;                              
+  font-size: 0.8em;                              
+  width: auto;                              
+  height: auto;                              
+  text-align: left;                              
+  font-weight: normal;                              
+  line-height: 1em;                              
+  margin-left: 15px;                              
+  margin-top: 6px;                              
+  clear: none;                              
+  min-height: 0px;                              
+  display: block;                              
+  margin-right: 0%;
+}
+
+
+
+/***** Common ***************************/
+
+
+.content-container {  
+  float: left;  
+  height: auto;
+  clear: none;  
+  width: 100%;  
+  margin: 50px 0px 50px 0px;  
+  padding: 0px 4% 0px 4%;
+}
